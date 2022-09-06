@@ -1,4 +1,4 @@
-.card {
+/* .card {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -57,7 +57,7 @@
   margin-bottom: 0.4rem;
   overflow: hidden;
   display: flex;
-  /* justify-content: center; */
+ 
   align-items: center;
   transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
   cursor: pointer;
@@ -108,3 +108,4 @@
   background: #f962b1;
   color: white;
 }
+ */
