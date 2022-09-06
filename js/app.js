@@ -1,4 +1,31 @@
 /* let root = document.getElementsByClassName("root")[0]; */
+let data = {
+  fullName: "Mia Smith",
+  position: "UI/UX Designer",
+  socials: [
+    {
+      id: "fb",
+      service: "Facebook",
+      url: "https://www.facebook.com/msmith24",
+    },
+    {
+      id: "ig",
+      service: "Instagram",
+      url: "https://www.instagram.com/msmith24",
+    },
+    {
+      id: "db",
+      service: "Dribbble",
+      url: "https://www.dribbble.com/msmith24",
+    },
+    {
+      id: "gl",
+      service: "Google",
+      url: "https://www.google.com/msmith",
+    },
+  ],
+};
+
 let style = document.createElement("style");
 let root = document.createElement("div");
 let body = document.getElementsByTagName("body")[0];
@@ -10,8 +37,8 @@ let html = `
     class="card__user-img"
   />
   <div class="card__info">
-    <span class="card__name">Jane Doe</span>
-    <span class="card__title">UI/UX Designer</span>
+    <span class="card__name">${data.fullName}</span>
+    <span class="card__title">${data.position}</span>
   </div>
   <div class="card-socials">
     <div class="card__icon card__icon--fb">
@@ -156,4 +183,6 @@ root.style.cssText = `background: url(https://wallpaperaccess.com/full/636909.jp
   background-size: cover;
   background-position: center;
   `;
-document.getElementsByClassName("card")[0].innerHTML = html;
+root.prepend(style);
+style.innerHTML = cssStyles;
+card.innerHTML = html;
